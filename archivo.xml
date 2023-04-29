@@ -1,0 +1,54 @@
+<graph id="PruebaGraphId">
+<version>1.0</version>
+<node id="someNodeId">
+<operator>Mosaic</operator>
+<sources>
+<source>${source}</source>
+</sources>
+<parameters>
+<variables>
+<variable>
+<name>chlor_a</name>
+<expression>chlor_a</expression>
+</variable>
+<variable>
+<name>latitude</name>
+<expression>latitude</expression>
+</variable>
+<variable>
+<name>longitude</name>
+<expression>longitude</expression>
+</variable>
+</variables>
+<conditions/>
+<combine>OR</combine>
+<crs>PROJCS["Equidistant_Cylindrical / World Geodetic System 1984", 
+GEOGCS["World Geodetic System 1984", 
+DATUM["World Geodetic System 1984", 
+SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+AUTHORITY["EPSG","6326"]], 
+PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+UNIT["degree", 0.017453292519943295], 
+AXIS["Geodetic longitude", EAST], 
+AXIS["Geodetic latitude", NORTH]], 
+PROJECTION["Equidistant_Cylindrical"], 
+PARAMETER["central_meridian", 0.0], 
+PARAMETER["latitude_of_origin", 0.0], 
+PARAMETER["standard_parallel_1", 0.0], 
+PARAMETER["false_easting", 0.0], 
+PARAMETER["false_northing", 0.0], 
+UNIT["m", 1.0], 
+AXIS["Easting", EAST], 
+AXIS["Northing", NORTH]]</crs>
+<orthorectify>false</orthorectify>
+<elevationModelName>GETASSE30</elevationModelName>
+<resampling>Nearest</resampling>
+<westBound>-84.0</westBound>
+<northBound>7.0</northBound>
+<eastBound>-77.0</eastBound>
+<southBound>1.0</southBound>
+<pixelSizeX>1000.0</pixelSizeX>
+<pixelSizeY>1000.0</pixelSizeY>
+</parameters>
+</node>
+</graph>
